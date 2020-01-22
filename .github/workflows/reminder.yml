@@ -1,0 +1,37 @@
+name: Reminder
+
+on:
+  schedule:
+  - cron: "0 0 16 ? * MON-FRI *"
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Checkout master
+      run: git checkout master
+    - name: Install jq
+      run: |
+          sudo apt-get update
+          sudo apt-get install jq
+    - name: Remind everyone
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: |
+          ./reminder.sh $TOKEN GSFNRG4L8
+          ./reminder.sh $TOKEN GS5GCCFFB
+          ./reminder.sh $TOKEN GSF9LCDPE
+          ./reminder.sh $TOKEN GSHJQNHM5
+          ./reminder.sh $TOKEN GSFP0915W
+          ./reminder.sh $TOKEN GSFP9S3MK
+          ./reminder.sh $TOKEN GSF9JETAQ
+          ./reminder.sh $TOKEN GS5GG9N73
+          ./reminder.sh $TOKEN GSFNY7Q5N
+          ./reminder.sh $TOKEN GS498QQHH
+          ./reminder.sh $TOKEN GSFP37FPS
+          ./reminder.sh $TOKEN GS499CS9H
+          ./reminder.sh $TOKEN GSF9D39QU
+          ./reminder.sh $TOKEN GSFP7H9EZ
+          ./reminder.sh $TOKEN GSFP77205
