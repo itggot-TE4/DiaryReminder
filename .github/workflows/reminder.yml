@@ -2,7 +2,7 @@ name: Reminder
 
 on:
   schedule:
-  - cron: "0 0 16 ? * MON-FRI *"
+  - cron: "0 16 * * 1-5"
 
 jobs:
   remind:
