@@ -1,8 +1,8 @@
 name: Reminder
 
-#on:
-#  schedule:
-#  - cron: "0 16 * * 1-5"
+on:
+  schedule:
+  - cron: "0 16 * * 1-5"
 
 jobs:
   remind:
@@ -20,18 +20,19 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
       run: |
-          ./reminder.sh $TOKEN GSFNRG4L8
-          ./reminder.sh $TOKEN GS5GCCFFB
-          ./reminder.sh $TOKEN GSF9LCDPE
-          ./reminder.sh $TOKEN GSHJQNHM5
-          ./reminder.sh $TOKEN GSFP0915W
-          ./reminder.sh $TOKEN GSFP9S3MK
-          ./reminder.sh $TOKEN GSF9JETAQ
-          ./reminder.sh $TOKEN GS5GG9N73
-          ./reminder.sh $TOKEN GSFNY7Q5N
-          ./reminder.sh $TOKEN GS498QQHH
-          ./reminder.sh $TOKEN GSFP37FPS
-          ./reminder.sh $TOKEN GS499CS9H
-          ./reminder.sh $TOKEN GSF9D39QU
-          ./reminder.sh $TOKEN GSFP7H9EZ
-          ./reminder.sh $TOKEN GSFP77205
+          ./reminder.sh $TOKEN G019Z66BFFS
+          ./reminder.sh $TOKEN G0199H7UPD1
+          ./reminder.sh $TOKEN G019Z6HGZ24
+          ./reminder.sh $TOKEN G0199BFQURG
+          ./reminder.sh $TOKEN G0199BM6D98
+          ./reminder.sh $TOKEN G019MVCUZS5
+          ./reminder.sh $TOKEN G019N02A0QZ
+          ./reminder.sh $TOKEN G0192KMCKP0
+          ./reminder.sh $TOKEN G01980ENUF7
+          ./reminder.sh $TOKEN G01980QMV1B
+          ./reminder.sh $TOKEN G0199HKA4Q3
+          ./reminder.sh $TOKEN G019N0K4YNM
+          ./reminder.sh $TOKEN G0199GX0TD1
+          ./reminder.sh $TOKEN G0192JV5CQN
+          ./reminder.sh $TOKEN G018UKAFYCX
+          ./reminder.sh $TOKEN G019FH8PG12
