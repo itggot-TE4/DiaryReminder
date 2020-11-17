@@ -1,4 +1,4 @@
-name: Reminder
+name: IFTTT
 
 on:
   schedule:
