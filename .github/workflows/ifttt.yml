@@ -1,6 +1,8 @@
 name: IFTTT
 
-on: push
+on:
+  schedule:
+  - cron: "0 13 * * 1-5"
 
 jobs:
   remind:
@@ -14,20 +16,19 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
       run: |
-          ./ifttt.sh $TOKEN G01A6FBV49E
-          #./ifttt.sh $TOKEN G019Z66BFFS
-          #./ifttt.sh $TOKEN G0199H7UPD1
-          #./ifttt.sh $TOKEN G019Z6HGZ24
-          #./ifttt.sh $TOKEN G0199BFQURG
-          #./ifttt.sh $TOKEN G0199BM6D98
-          #./ifttt.sh $TOKEN G019MVCUZS5
-          #./ifttt.sh $TOKEN G019N02A0QZ
-          #./ifttt.sh $TOKEN G0192KMCKP0
-          #./ifttt.sh $TOKEN G01980ENUF7
-          #./ifttt.sh $TOKEN G01980QMV1B
-          #./ifttt.sh $TOKEN G0199HKA4Q3
-          #./ifttt.sh $TOKEN G019N0K4YNM
-          #./ifttt.sh $TOKEN G0199GX0TD1
-          #./ifttt.sh $TOKEN G0192JV5CQN
-          #./ifttt.sh $TOKEN G018UKAFYCX
-          #./ifttt.sh $TOKEN G019FH8PG12
+          ./ifttt.sh $TOKEN G019Z66BFFS
+          ./ifttt.sh $TOKEN G0199H7UPD1
+          ./ifttt.sh $TOKEN G019Z6HGZ24
+          ./ifttt.sh $TOKEN G0199BFQURG
+          ./ifttt.sh $TOKEN G0199BM6D98
+          ./ifttt.sh $TOKEN G019MVCUZS5
+          ./ifttt.sh $TOKEN G019N02A0QZ
+          ./ifttt.sh $TOKEN G0192KMCKP0
+          ./ifttt.sh $TOKEN G01980ENUF7
+          ./ifttt.sh $TOKEN G01980QMV1B
+          ./ifttt.sh $TOKEN G0199HKA4Q3
+          ./ifttt.sh $TOKEN G019N0K4YNM
+          ./ifttt.sh $TOKEN G0199GX0TD1
+          ./ifttt.sh $TOKEN G0192JV5CQN
+          ./ifttt.sh $TOKEN G018UKAFYCX
+          ./ifttt.sh $TOKEN G019FH8PG12
